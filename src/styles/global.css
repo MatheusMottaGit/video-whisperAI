@@ -1,0 +1,17 @@
+:root {
+  --background-main: #030712;
+  --surface-primary: #111827;
+  --surface-secondary: #1F2937;
+  --surface-tertiary: #374151;
+  --video-background: #000000;
+  --text-primary: #F9FAFB;
+  --text-secondary: #E5E7EB;
+  --text-tertiary: #9CA3AF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
