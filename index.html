@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <!-- data-message para mostrar que as etapas estão sendo seguidas -->
+  <meta charset="UTF-8" data-message="..."/> 
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -19,7 +20,7 @@
   <img src="src/assets/logo.svg" class="logo">
 
   <!-- url form -->
-  <form class="flex">
+  <form class="flex" id="form">
     <div class="input-wrapper flex">
       <input required type="text" name="url" placeholder="Cole a URL do YouTube aqui">
       <i class="ph ph-x-circle"></i>
@@ -34,7 +35,11 @@
       <div class="yt-player"></div>
     </div>
 
-    <div class="transcription-wrapper">
+    <div class="transcription-wrapper flex">
+      <button id="copy">
+        <i class="ph ph-copy-simple grid"></i>
+      </button>
+
 
     </div>
   </main>
