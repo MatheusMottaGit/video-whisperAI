@@ -1,5 +1,5 @@
-.video-container {
-  height: 500px;
+main {
+  height: fit-content;
   width: 1280px;
   padding: 40px;
   justify-content: center;
@@ -7,4 +7,19 @@
   gap: 32px;
   background: var(--surface-primary);
   border-radius: 10px;
+}
+
+.video-wrapper,
+.transcription-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.yt-player {
+  background: var(--video-background);
+  height: 400px;
+  padding: 20px 0px;
+  border-radius: 32px;
+
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 }
