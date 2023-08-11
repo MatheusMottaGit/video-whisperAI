@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -14,8 +15,29 @@
 </head>
 
 <body>
-  <div id="app"></div>
-  <script type="module" src="/main.js"></script>
+  <!-- logo -->
+  <img src="src/assets/logo.svg" class="logo">
+
+  <!-- url form -->
+  <form class="flex">
+    <div class="input-wrapper flex">
+      <input required type="text" name="url" placeholder="Cole a URL do YouTube aqui">
+      <i class="ph ph-x-circle"></i>
+    </div>
+
+    <button>Transcrever</button>
+  </form>
+
+  <!-- video transcription -->
+  <section class="video-container flex">
+    <div class="video-wrapper">
+      <div class="container"></div>
+    </div>
+
+    <div class="transcription"></div>
+  </section>
+
+  <script type="module" src="src/main.js"></script>
 </body>
 
 </html>
