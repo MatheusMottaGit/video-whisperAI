@@ -1,3 +1,5 @@
+import { loading, stopLoading } from './loader'
+
 const form = document.querySelector('#form')
 
 form.addEventListener('submit', (event) => {
