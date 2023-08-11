@@ -1,0 +1,56 @@
+form {
+  gap: 8px;
+}
+
+.input-wrapper {
+  width: 467px;
+  padding: 6px;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid var(--surface-secondary, #1F2937);
+  background: var(--surface-primary, #111827);
+  color: var(--text-tertiary);
+}
+
+.input-wrapper:focus-within {
+  border: 2px solid var(--brand-primary, #9705EA);
+  background: var(--surface-primary, #111827);
+
+  transition: all ease 0.3s;
+}
+
+input {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+
+  color: var(--text-primary, #F9FAFB);
+  font-size: 1rem;
+  font-size: small;
+}
+
+input:valid {
+  text-decoration-line: underline;
+}
+
+input:not(:valid)+i {
+  display: none;
+}
+
+form button {
+  color: var(--text-primary);
+  border: none;
+  padding: 14px;
+
+  border-radius: 10px;
+  border-radius: 8px;
+  background: var(--brand-primary, #9705EA);
+  box-shadow: 0px 0px 16px 0px rgba(151, 5, 234, 0.50);
+
+  cursor: pointer;
+}
+
+form button:hover {
+  transition: all 0.2s;
+  box-shadow: 0px 0px 32px 0px #9705EA;
+}

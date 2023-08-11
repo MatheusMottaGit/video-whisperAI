@@ -1,0 +1,10 @@
+.video-container {
+  height: 500px;
+  width: 1280px;
+  padding: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  background: var(--surface-primary);
+  border-radius: 10px;
+}

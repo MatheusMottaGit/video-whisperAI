@@ -15,3 +15,36 @@
   box-sizing: border-box;
   font-family: 'Inter';
 }
+
+body {
+  background: var(--background-main);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  margin: -1;
+  padding: 0;
+}
+
+.logo {
+  height: 32px;
+  width: 186px;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
